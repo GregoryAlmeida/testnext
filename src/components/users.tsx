@@ -11,7 +11,7 @@ export default function Users() {
   const [data, setData] = useState<IData[]>([])
   
   const handleAPI = async() => {
-    const response = await fetch('http://localhost:3000/api')
+    const response = await fetch('https://nexttestapi.netlify.app/api')
     setData(await response.json())
   }
 
