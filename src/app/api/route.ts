@@ -1,5 +1,8 @@
+
 export async function GET() {
-  return Response.json([
+  
+
+  return Response.json({data: [
     {
       id: crypto.randomUUID(),
       nome: 'Gregory',
@@ -20,5 +23,5 @@ export async function GET() {
       nome: 'Carlos Lucas',
       idade: 22,
     },
-  ])
+  ], headers: 'Access-Control-Allow-Origin: *'})
 }
